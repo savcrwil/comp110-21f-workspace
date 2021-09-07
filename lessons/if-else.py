@@ -16,4 +16,3 @@ else:
             print("D")
         else:
             print("C")
-            
