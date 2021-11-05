@@ -86,3 +86,13 @@ def count(a: list[str]) -> dict[str, int]:
             b[item] = 1
     
     return b
+
+
+def filter(x: dict[str, list[str]], exclude: str, column: str) -> list[str]:
+    """Filters out a specific key-value from a dictionary."""
+    new_list: list[str] = []
+   
+    for item in x[column]:
+        if item != exclude:
+            new_list.append(item)
+    return new_list
